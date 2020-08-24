@@ -1,56 +1,56 @@
 ## Statistical Models & Simulations (w/ Mathematica)
 
 ### Random Number Generation, Central Limit Theorem, & Law of Large Numbers
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab2.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab2.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab2.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab2.nb)
 
 ### Poisson Distribution Simulations (Marked & Compound)
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab3.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab3.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab3.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab3.nb)
 
 ### Transition Matrices & Discrete-Time Markov Chains
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab4.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab4.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab4.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab4.nb)
 
 ### Random Walks & Stationary Distributions
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab5.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab5.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab5.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab5.nb)
 
 ### Gambler's Ruin & Casino Strategies
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab6.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab6.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab6.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab6.nb)
 
 ### Continuous-Time Markov Chains & Birth/Death Processes
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab7.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab7.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab7.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab7.nb)
 
 ### Monte-Carlo Techniques (Integration, Areas, & Importance Sampling)
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab8.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab8.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab8.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab8.nb)
 
 ### Metropolis-Hastings (Markov chain Monte Carlo Algorithm)
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab9.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab9.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab9.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab9.nb)
 
 ### Brownian Motion & Stock Market
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab10.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab10.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab10.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab10.nb)
 
 ### Black-Scholes Option Pricing 
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab11.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab11.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab11.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab11.nb)
 
 ### Renewal Processes
-[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab12.pdf)
+[Report](https://github.com/javier2828/statisticalModels/blob/master/Lab12.pdf)
 
-[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab12.nb)
+[Code](https://github.com/javier2828/statisticalModels/blob/master/Lab12.nb)
