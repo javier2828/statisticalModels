@@ -1,0 +1,2199 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     85273,       2191]
+NotebookOptionsPosition[     76494,       2059]
+NotebookOutlinePosition[     77176,       2083]
+CellTagsIndexPosition[     77133,       2080]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Project 7 Javier Salazar 1001144647.", "Section",
+ CellChangeTimes->{{3.6678405472941375`*^9, 3.6678405484017444`*^9}, {
+  3.807221898963071*^9, 
+  3.807221907757682*^9}},ExpressionUUID->"7f060356-627c-4e2e-9b85-\
+bf62abd0a975"],
+
+Cell[TextData[{
+ StyleBox["\n",
+  FontSize->16],
+ StyleBox["Survival of Family Names.",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["  One quarter of married couples in certain society have no \
+children.  The other three quarters have exactly three children, each equally \
+likely to be a boy or a girl. Using the Branching Processes model\n  \n(a)  \
+Find the PGF (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["Probability Generating Function",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")  \[CurlyPhi](s)",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.5719262483781*^9, 3.5719262605773*^9}, {
+   3.5719263829719*^9, 3.5719264095231*^9}, {3.5719264608645*^9, 
+   3.5719265129372997`*^9}, {3.5719266367233*^9, 3.5719266535088997`*^9}, {
+   3.5719273684305*^9, 3.5719273689453*^9}, {3.5719274059484997`*^9, 
+   3.5719274094897003`*^9}, {3.5719579797016*^9, 3.5719579955044003`*^9}, {
+   3.5720103560893*^9, 3.5720104944925003`*^9}, {3.5720420031366615`*^9, 
+   3.5720420095327024`*^9}, {3.6678398926411233`*^9, 3.667839930533766*^9}, {
+   3.667840683857413*^9, 3.6678406931394725`*^9}, {3.6678407363294325`*^9, 
+   3.667840787217223*^9}, {3.667840831383396*^9, 3.667840832022807*^9}, {
+   3.667840882770239*^9, 3.6678408886029186`*^9}, {3.6678413394260316`*^9, 
+   3.667841353871261*^9}, 3.667841394664215*^9, {3.698076417499251*^9, 
+   3.698076436020051*^9}, 3.6991125678881845`*^9, {3.760906919547735*^9, 
+   3.7609069213806877`*^9}},ExpressionUUID->"1fb835e6-3edc-4b30-96c8-\
+96e5280cb720"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", "s", "]"}], ";", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"s", "\[Equal]", 
+     RowBox[{
+      FractionBox["11", "32"], "+", " ", 
+      RowBox[{"s", 
+       FractionBox["9", "32"]}], "+", 
+      RowBox[{
+       SuperscriptBox["s", "2"], 
+       FractionBox["9", "32"]}], " ", "+", 
+      RowBox[{
+       SuperscriptBox["s", "3"], 
+       FractionBox["3", "32"]}]}]}], ",", "s"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.760906922473176*^9, 3.7609069870330267`*^9}, {
+   3.760907026445035*^9, 3.760907026713825*^9}, 3.760963343767367*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"eedd812b-c654-4d10-b7bb-38ee642be25c"],
+
+Cell[TextData[StyleBox["(b)  Graph  \[CurlyPhi](s)  together with the \
+function g(s) = s.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.760906929340664*^9, 3.7609069334779997`*^9}, {
+   3.7609071187361593`*^9, 3.760907126452547*^9}, 
+   3.760963328264081*^9},ExpressionUUID->"54236b64-7c35-4218-988e-\
+b2fc73ef9e69"],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"s", ",", 
+     RowBox[{
+      FractionBox["11", "32"], "+", " ", 
+      RowBox[{"s", 
+       FractionBox["9", "32"]}], "+", 
+      RowBox[{
+       SuperscriptBox["s", "2"], 
+       FractionBox["9", "32"]}], " ", "+", 
+      RowBox[{
+       SuperscriptBox["s", "3"], 
+       FractionBox["3", "32"]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "1.25"}], "}"}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.760907127238521*^9, 3.760907186602271*^9}, 
+   3.7609633481614847`*^9},
+ CellLabel->"",ExpressionUUID->"c6c685ae-b68a-4269-83dd-53c347b195a1"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxFxXsw0wEcAPAJdce6S911Odl+nLPMI/7oLl0ousv7Ess112PDprzi7E6o
+JGLX0aqd5+12I7pyJjXd6bGEyGMrFrk2tTZLhsLaMVyr/vD9/vG5jxs7+2Tq
+FhKJFPPP/0VX2VsDUpKCN+9TEdGJRGDI5tZ++Q2CiIBF3ZVUe+I0nBHEy1yh
+XoBV62nCRepleJtaR1ug8mHJkDhnjloHS9v56gy/RzA3ZLRuPvcpnGXw0suk
+XbCDWynt68FuuGrHMF1yvhdmqxNe2470wzlvS9nZtCG44xI5fk+EApYUphv9
+Ez/AJeKNuN/zozBJpT3yskAFe+Zx8hPo4/C0ueaU46sJONJw8crdnEk4dlrg
+TaF8ho297OJ3bWrYz2nCNezcFOwQYmZpTF/g4wvMFXeGFp7sSbFh+nyDOyv6
+zhJmnGPP0yqVOjg5t7CTXK+H93O9ldGsafj9Th9HXqABfiEtafCx/Q4X2tBP
+jEzhDpqC8CzZDGxocROKi37Awn3Odl2MWVhQzxlgEUaYKTyjJM/gq8eaLWL5
+HKw3hOb3lM/DjUEBLgrWAtxWxnPi+v6EyxnJUbZm/IBG8rBc8Quu9WpoU0Qt
+wte6K2ujuvAYF0bzkMcSfDRrIMmJj4v3sj1GzLhH74Pq2KRlWODbQx+T4xyT
+3egg3QSzO5YJ/m08oyR+I/IOzouXfSLfwyvMvCpBNS4NtKzXiHDLG+tESysu
+GCNX9g3g9U2ZaTcH8aY8ZVj4MP5st2BtWIlrmLvSVOM4Te8cptPj/rICyn0D
+fqhMbUmdwaNposezRjw3naAsLeFFh69bnpjwsu26j3lmvLa96dbqKt5YbMd9
+voa3xqWGFm3gMvd+1+A/uNzkabFa8b9Dz4dv
+       "]]},
+     Annotation[#, "Charting`Private`Tag$5184#1"]& ], 
+    TagBox[
+     {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJwVjH0w1HkAh7GkwQl1Lr3YJRNtqK5Jacon0vSql9MyUXnJW+WlNuYKXdYl
+jF4ULbbk5Hq5it5ocldIzvt6SZbaxVq7FnlZvr9fVkx77o9nnnlmPvOxCoz6
+JVhHS0vLY5b/nftb4Jw1Qb4uQodifS0tEaraWHu8Wc64XJ/CrdIWQVNd9juL
+tRPHTFY6pTJEyK24wtRjHULqqema+foihG+OiZhkHgfrTLm5g7EIbdNhmSrm
+OXB1o8NOLRFBXyyzHWGmojUqzWKjswj59XmnvzBz8IR9UCA+I0LR01RxuOMj
+MIRdM7JJEULRmjPMfYmfrddVHDrXgUjFir7iolKUFszlOH3vgIHVRdueDRW4
+Uem/ftnNTlw1aWDn+7+HQWi7PMnuEwLFB8sZjdVgOr71SWn+hNP/XgyMsq3H
+H35nUubGfcbzU0aeC3cKUV6ySSOzEiM/7uTQau8WrOf0t8R2i5GYN3OAGm6F
+VvxaleymBFpt0i1vYtuQc36hS8n+LiyPDjl7kN0OZXM3iVjWDTmd5WX4VgSL
+B0ukr8e6sUtx4vyN050YeGD604v2HuyVp6+0tPwM7+3Pxlj+Ugy9D0yoLRRj
+QXcHm9cqhaOpaOlWvy7U8ty3De3vhQHoAAnpxrJ6oWhBYy+2j/hMWnOkcOd/
+VMJLhs7KIG0f+14IrvWScpkMJSlVR1l0LzwZea4bT/QhRC9G2tQkw9O1rxI0
+2nIc48aVGAn6sI3f8+5wphyrQlc27QmQ4/Ki8pJddgo0m9kbxjgrsGYVw++D
+UIF/ihJv2TP6UT7tqF4U0Y84bfb+xq5+jDjxzEyZShhIYndEFitBKVsfb2lT
+QnHfKjMvfgDZesl62xMGkGlnoVvKGcSbjIcbwlwHkS4IqQlgDaFjwm7e8LdB
++GQeaTJSDuEqCQh4VzIEtfu9qbyyL+jhPXKzvvQFfQq3s5XJw6i4UVg77DGM
+u5vXLBYGjKC/43AW134EhUkxpqEOo3iR4Hdbpj2KZM6x3Qx6FGcFOgO8zlGs
+k+T/lSwcw+UjWYeCa8aQveJWoXC3CqTObY6ZlwoXKq5k7y5VYfJ2htO6dhU8
+FnPu1duMw8xo+WsPzjhcI2t8TVPHEemrZFY2jyNvSaBNIz2OweaX1U3eE7B5
+/4C/13fW98yfjX6aQLpDJftD2QTypeoy7mGCEKLbWscmqFtkFRU0QhD4fIKV
+eo3g+qUGuuVXCuGJnjO7rs/25ul5brEUYjyLO4wyCMLTJkJfxlNIoWOupvMJ
+3K3cW/k8CkXOU9NZuQT7ntSm+qdRmHqnEd1/TODzVeem5g6F9A9GV6pqCLqN
+BSvCqykICiLCLtUR2Fy/r6OopVAQ3bR1RwNBgZfE4mgDhVfm6d8ammb30mad
+Ay0UJD7zw9raCcyP25c7f6Zg22exVdZHsFgTIjcfpbC6ONbyTwXBiemY/AwV
+hY1J4qlg5ey/ac9tE0Jhj23us8EhAv+yhr2GagrckyzL8XECIT8oj6FDI34T
+b+oFIXBpz9mXqEsj6QfZx2iawDHb1UVbn0b204I0tZrAspcSaQxp3E3QDf37
+G4GcN4d3wZjG4wPBbvEzBK8k/OMaExrF1tVLXb4TqL8/TL8wn0YZWT6l0RAY
+f8VXzY80/gPH7Yb7
+       "]]},
+     Annotation[#, "Charting`Private`Tag$5184#2"]& ]}, {}, {}},
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 1.25}, {0., 1.3178710574278543`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.760907130537795*^9, 3.760907186951037*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"5a834337-2a7d-40b5-819b-704d2cca897b"],
+
+Cell[TextData[StyleBox["(c)  Find the expected size of the male population in \
+the 7-th generation.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.760907131890521*^9, 3.760907136647498*^9}, {
+   3.760907627950581*^9, 3.76090764834797*^9}, {3.760961786142959*^9, 
+   3.760961787183889*^9}, 
+   3.760963319172338*^9},ExpressionUUID->"2e3e8f25-e013-4e71-bbd1-\
+638d1acb2ca0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The expected size of the male population in the 7-th generation is \
+\>\"", ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"9", "/", "8"}], ")"}], "^", "7"}], "//", "N"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.760961788598527*^9, 3.760961814872983*^9}, 
+   3.760963136038726*^9, {3.760963817170545*^9, 3.760963849506009*^9}},
+ CellLabel->
+  "In[682]:=",ExpressionUUID->"fd50fe18-61f2-453f-ae45-b364d2bed55f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The expected size of the male population in the 7-th \
+generation is \"\>", "\[InvisibleSpace]", "2.2806973457336426`"}],
+  SequenceForm[
+  "The expected size of the male population in the 7-th generation is ", 
+   2.2806973457336426`],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.760963845795257*^9, 3.760963850444933*^9}},
+ CellLabel->
+  "During evaluation of \
+In[682]:=",ExpressionUUID->"b19ebb70-5bd0-4d4c-910f-4316a725516e"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["(d)  What is the probability that the male line of descent of a \
+particular husband will die out\n\n       (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["i",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")    in the 3-rd  generation",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760961793314468*^9, 3.760961799225418*^9}, {
+  3.760963140360713*^9, 
+  3.76096314860456*^9}},ExpressionUUID->"56e6ce91-3ae9-425f-9d5a-\
+984c467687ae"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Pi]1", "=", 
+   RowBox[{
+    FractionBox["11", "32"], "//", "N"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Pi]2", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]1", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]1", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]1", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]3", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]2", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]2", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]2", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the male descent of a particular husband will die \
+out in the 3-rd generation is \>\"", ",", 
+   RowBox[{"\[Pi]3", "-", "\[Pi]2"}]}], "]"}]}], "Input",
+ CellChangeTimes->{
+  3.760963149982657*^9, 3.760963242102808*^9, {3.760963297185252*^9, 
+   3.760963309253128*^9}, {3.760963785089017*^9, 3.7609638055227737`*^9}},
+ CellLabel->
+  "In[677]:=",ExpressionUUID->"9379e7cf-303e-4e9e-baa9-130acdd0d55a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the male descent of a particular husband \
+will die out in the 3-rd generation is \"\>", "\[InvisibleSpace]", 
+   "0.07489153455692432`"}],
+  SequenceForm[
+  "The probability that the male descent of a particular husband will die out \
+in the 3-rd generation is ", 0.07489153455692432],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.760963800380197*^9, 3.7609638068439493`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[677]:=",ExpressionUUID->"f4d7b545-05b6-461b-b911-85beac82b75e"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["        (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["ii",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")   by the 7-th generation",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760963152427759*^9, 3.760963169359313*^9}, 
+   3.7609632333578577`*^9, {3.7609633556052837`*^9, 
+   3.760963371587105*^9}},ExpressionUUID->"5e879a55-f2d4-48ff-952c-\
+55dd084d75ff"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Pi]1", "=", 
+   RowBox[{
+    FractionBox["11", "32"], "//", "N"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Pi]2", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]1", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]1", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]1", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]3", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]2", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]2", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]2", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]4", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]3", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]3", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]3", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]5", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]4", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]4", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]4", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]6", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]5", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]5", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]5", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]7", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["11", "32"], "+", " ", 
+     RowBox[{"\[Pi]6", 
+      FractionBox["9", "32"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]6", "2"], 
+      FractionBox["9", "32"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]6", "3"], 
+      FractionBox["3", "32"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the male descent of a particular husband will die \
+out by the 7-th generation is \>\"", ",", "\[Pi]7"}], "]"}]}], "Input",
+ CellChangeTimes->{
+  3.760963152882718*^9, 3.7609632307965937`*^9, 3.760963510439166*^9, {
+   3.7609637300996637`*^9, 3.760963772029209*^9}},
+ CellLabel->
+  "In[665]:=",ExpressionUUID->"2c419b53-e7d8-4bf5-8a66-489dc0d4d29e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the male descent of a particular husband \
+will die out by the 7-th generation is \"\>", "\[InvisibleSpace]", 
+   "0.6783671299742869`"}],
+  SequenceForm[
+  "The probability that the male descent of a particular husband will die out \
+by the 7-th generation is ", 0.6783671299742869],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.760963772908031*^9},
+ CellLabel->
+  "During evaluation of \
+In[665]:=",ExpressionUUID->"3f719da3-5522-40dd-b7a2-f6b31c7cb581"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["      (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["iii",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")  eventually",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760963153316636*^9, 3.7609631882729883`*^9}, {
+  3.760963513337113*^9, 
+  3.760963516443843*^9}},ExpressionUUID->"86126d04-9f73-47da-818f-\
+a133f945c88a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"extinct", "=", 
+   RowBox[{"11", "/", "32"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "2"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "100000"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"extinct", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["11", "32"], "+", " ", 
+       RowBox[{"extinct", 
+        FractionBox["9", "32"]}], "+", 
+       RowBox[{
+        SuperscriptBox["extinct", "2"], 
+        FractionBox["9", "32"]}], "+", " ", 
+       RowBox[{
+        SuperscriptBox["extinct", "3"], 
+        FractionBox["3", "32"]}]}], ")"}], "//", "N"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the male descent of a particular husband will die \
+out eventually is \>\"", ",", "extinct"}], "]"}]}], "Input",
+ CellChangeTimes->{
+  3.760963153716851*^9, {3.7609631899477987`*^9, 3.760963190689704*^9}, {
+   3.760963533607315*^9, 3.760963746518858*^9}},
+ CellLabel->
+  "In[662]:=",ExpressionUUID->"75555da6-286f-4087-94e9-ab33f8833d70"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the male descent of a particular husband \
+will die out eventually is \"\>", "\[InvisibleSpace]", "0.7688746209726904`"}],
+  SequenceForm[
+  "The probability that the male descent of a particular husband will die out \
+eventually is ", 0.7688746209726904],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.760963712802821*^9, 3.760963748895903*^9}},
+ CellLabel->
+  "During evaluation of \
+In[662]:=",ExpressionUUID->"079c454c-aa3a-4136-a2ba-16731ac181ff"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["(e)  Simulate n = 100000 samples of the first 7 male \
+generations, compute the frequency of extinction by \n      the 7-th \
+generation and the average size of the 7-th generation of males. Compare with \
+exact values.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.760963192393312*^9, 3.760963203606254*^9}, 
+   3.760963462738017*^9},ExpressionUUID->"b0a20099-d636-4558-b7c7-\
+8f96698d32f2"],
+
+Cell[TextData[{
+ StyleBox["Hint",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[". Use total probability formula to determine the probabilities of \
+a father having  k  boys  ",
+  FontColor->RGBColor[0., 0., 0.]],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    StyleBox["P",
+     FontWeight->"Plain",
+     FontSlant->"Plain",
+     FontTracking->"Plain",
+     FontVariations->{"CompatibilityType"->0,
+     "Outline"->False,
+     "Shadow"->False,
+     "StrikeThrough"->False,
+     "Underline"->False},
+     FontVariations -> {"Masked" -> False},
+     FontVariations -> {"RotationAngle" -> 0}], "k"], TraditionalForm]],
+  FontFamily->"Arial",
+  FontColor->RGBColor[0., 0., 0.],ExpressionUUID->
+  "d0a14d32-5100-460d-a3d8-406b8db1f7a2"],
+ StyleBox[" , k = 0, 1, 2, 3.",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760907633910692*^9, 3.760907643768085*^9}, 
+   3.76090770429354*^9, 
+   3.760963467245779*^9},ExpressionUUID->"e171c95e-a8ed-4313-831e-\
+c3f8baedaac7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{"Piecewise", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", " ", 
+          RowBox[{"11", "/", "32"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{
+          RowBox[{"11", "/", "32"}], "<", "x", "\[LessEqual]", " ", 
+          RowBox[{"20", "/", "32"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"2", ",", 
+         RowBox[{
+          RowBox[{"20", "/", "32"}], "<", "x", "\[LessEqual]", " ", 
+          RowBox[{"29", "/", "32"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", 
+         RowBox[{
+          RowBox[{"29", "/", "32"}], "<", "x", "\[LessEqual]", "1"}]}], 
+        "}"}]}], "}"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.760910970398844*^9, 3.760910989303734*^9}, 
+   3.760912549180635*^9, 3.760961846377729*^9},
+ CellLabel->
+  "In[511]:=",ExpressionUUID->"76aa9435-df3f-41de-b6c1-17161f40e9d6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"X", ":=", 
+  RowBox[{"RandomReal", "[", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "[", "x_", "]"}], ":=", 
+  RowBox[{"Piecewise", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", " ", 
+        RowBox[{"11", "/", "32"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       RowBox[{
+        RowBox[{"11", "/", "32"}], "<", "x", "\[LessEqual]", " ", 
+        RowBox[{"20", "/", "32"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", 
+       RowBox[{
+        RowBox[{"20", "/", "32"}], "<", "x", "\[LessEqual]", " ", 
+        RowBox[{"29", "/", "32"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", 
+       RowBox[{
+        RowBox[{"29", "/", "32"}], "<", "x", "\[LessEqual]", "1"}]}], "}"}]}],
+     "}"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", "100000"}], ";", 
+  RowBox[{"NumGenerations", "=", "7"}], ";", 
+  RowBox[{"size", "=", "0"}], ";", 
+  RowBox[{"count1", "=", "0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Do", "[", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "=", "1"}], ";", "\[IndentingNewLine]", "  ", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", "       ", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"x", ">", "0"}], ",", 
+         RowBox[{
+          RowBox[{"a", "=", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"g", "[", "X", "]"}], ",", 
+             RowBox[{"{", "x", "}"}]}], "]"}]}], ";", 
+          RowBox[{"x", "=", 
+           RowBox[{"Apply", "[", 
+            RowBox[{"Plus", ",", "a"}], "]"}]}]}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "      ", 
+       RowBox[{"{", "NumGenerations", "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", "  ", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"x", "\[Equal]", "0"}], ",", 
+       RowBox[{"count1", "=", 
+        RowBox[{"count1", "+", "1"}]}], ",", 
+       RowBox[{"size", "=", 
+        RowBox[{"size", "+", "x"}]}]}], " ", "]"}]}], ",", 
+    "\[IndentingNewLine]", " ", 
+    RowBox[{"{", "n", "}"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<frequency(extinction by 7-th generation) = \>\"", ",", 
+    RowBox[{
+     RowBox[{"count1", "/", "n"}], "//", "N"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<\!\(\*SubscriptBox[\(\[Pi]\), \(\(7\)\(\\\ \)\)]\)= \>\"", ",", " ", 
+    "0.678367"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<average(size of 7-th generation) = \>\"", ",", 
+    RowBox[{
+     RowBox[{"(", " ", 
+      FractionBox["size", "n"], ")"}], "//", "N"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<E \!\(\*FormBox[StyleBox[SubscriptBox[StyleBox[\"X\",FontWeight->\"\
+Plain\",FontSlant->\"Plain\",FontTracking->\"Plain\",
+FontVariations->{\"CompatibilityType\"->0,\"Outline\"->False,\"Shadow\"->\
+False,\"StrikeThrough\"->False,\"Underline\"->False},FontVariations -> \
+{\"Masked\" -> False},FontVariations -> {\"RotationAngle\" -> 0}], \
+\"7\"],FontSlant->\"Italic\"],TraditionalForm]\) = \>\"", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"9", "/", "8"}], ")"}], "^", "7"}], "//", "N"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.760915553764756*^9, 3.7609155540188026`*^9}, {
+   3.760915614443577*^9, 3.760915671816719*^9}, {3.7609157044866858`*^9, 
+   3.76091571142594*^9}, {3.7609160927052298`*^9, 3.760916112156167*^9}, {
+   3.760956528791617*^9, 3.760956529751121*^9}, {3.760961112477674*^9, 
+   3.76096111751054*^9}, 3.760961595052713*^9, 3.7609616720260277`*^9, {
+   3.7609618673286552`*^9, 3.760961899109083*^9}, {3.76096195218122*^9, 
+   3.760961965191313*^9}, {3.7609634786713257`*^9, 3.7609634886338778`*^9}, {
+   3.761003496532031*^9, 3.761003500779626*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"77781a89-863f-43ca-ac2c-bdf9b642c137"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"frequency(extinction by 7-th generation) = \"\>", 
+   "\[InvisibleSpace]", "0.67647`"}],
+  SequenceForm["frequency(extinction by 7-th generation) = ", 0.67647],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.760915683850144*^9, 3.760915719964169*^9, {3.7609161042113943`*^9, 
+   3.7609161219320498`*^9}, 3.760956537336418*^9, 3.760961126045164*^9, 
+   3.7609616669722967`*^9, {3.760961858777253*^9, 3.7609618860650167`*^9}, 
+   3.760961972678384*^9, {3.760963477867587*^9, 3.7609634975617313`*^9}, 
+   3.7610035095169764`*^9},
+ CellLabel->
+  "During evaluation of \
+In[64]:=",ExpressionUUID->"35ec1d17-8f50-4c78-ba50-4f103c5e6ca0"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(\[Pi]\\), \\(\\(7\\)\\(\\\\ \
+\\)\\)]\\)= \"\>", "\[InvisibleSpace]", "0.678367`"}],
+  SequenceForm[
+  "\!\(\*SubscriptBox[\(\[Pi]\), \(\(7\)\(\\ \)\)]\)= ", 0.678367],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.760915683850144*^9, 3.760915719964169*^9, {3.7609161042113943`*^9, 
+   3.7609161219320498`*^9}, 3.760956537336418*^9, 3.760961126045164*^9, 
+   3.7609616669722967`*^9, {3.760961858777253*^9, 3.7609618860650167`*^9}, 
+   3.760961972678384*^9, {3.760963477867587*^9, 3.7609634975617313`*^9}, 
+   3.761003509525894*^9},
+ CellLabel->
+  "During evaluation of \
+In[64]:=",ExpressionUUID->"dcc572bc-8c6e-4d48-8e02-4ab5205b5fa5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"average(size of 7-th generation) = \"\>", "\[InvisibleSpace]", 
+   "2.29617`"}],
+  SequenceForm["average(size of 7-th generation) = ", 2.29617],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.760915683850144*^9, 3.760915719964169*^9, {3.7609161042113943`*^9, 
+   3.7609161219320498`*^9}, 3.760956537336418*^9, 3.760961126045164*^9, 
+   3.7609616669722967`*^9, {3.760961858777253*^9, 3.7609618860650167`*^9}, 
+   3.760961972678384*^9, {3.760963477867587*^9, 3.7609634975617313`*^9}, 
+   3.761003509532052*^9},
+ CellLabel->
+  "During evaluation of \
+In[64]:=",ExpressionUUID->"363633a6-0329-494d-8763-e2e012089718"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"E \
+\\!\\(\\*FormBox[StyleBox[SubscriptBox[StyleBox[\\\"X\\\",FontWeight->\\\"\
+Plain\\\",FontSlant->\\\"Plain\\\",FontTracking->\\\"Plain\\\",\\\
+nFontVariations->{\\\"CompatibilityType\\\"->0,\\\"Outline\\\"->False,\\\"\
+Shadow\\\"->False,\\\"StrikeThrough\\\"->False,\\\"Underline\\\"->False},\
+FontVariations -> {\\\"Masked\\\" -> False},FontVariations -> \
+{\\\"RotationAngle\\\" -> 0}], \
+\\\"7\\\"],FontSlant->\\\"Italic\\\"],TraditionalForm]\\) = \"\>", 
+   "\[InvisibleSpace]", "2.2806973457336426`"}],
+  SequenceForm[
+  "E \!\(\*FormBox[StyleBox[SubscriptBox[StyleBox[\"X\",FontWeight->\"Plain\",\
+FontSlant->\"Plain\",FontTracking->\"Plain\",\n\
+FontVariations->{\"CompatibilityType\"->0,\"Outline\"->False,\"Shadow\"->\
+False,\"StrikeThrough\"->False,\"Underline\"->False},FontVariations -> \
+{\"Masked\" -> False},FontVariations -> {\"RotationAngle\" -> 0}], \
+\"7\"],FontSlant->\"Italic\"],TraditionalForm]\) = ", 2.2806973457336426`],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.760915683850144*^9, 3.760915719964169*^9, {3.7609161042113943`*^9, 
+   3.7609161219320498`*^9}, 3.760956537336418*^9, 3.760961126045164*^9, 
+   3.7609616669722967`*^9, {3.760961858777253*^9, 3.7609618860650167`*^9}, 
+   3.760961972678384*^9, {3.760963477867587*^9, 3.7609634975617313`*^9}, 
+   3.761003509538828*^9},
+ CellLabel->
+  "During evaluation of \
+In[64]:=",ExpressionUUID->"fc252449-18d3-4924-bb89-502f934266e4"]
+}, Open  ]],
+
+Cell[TextData[{
+ "\n",
+ StyleBox["2. ",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["Survival of Family Names(B).  ",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["Married couple in certain society have  no children, one child or \
+2 children with equal probabilities. \n    Each child is equally likely to be \
+a boy or a girl.\n    \n    (a)  Find the PGF (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["Probability Generating Function",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")  \[CurlyPhi](s)",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760975564130259*^9, 3.760975569672789*^9}, {
+  3.760975697712584*^9, 3.760975698423031*^9}, {3.760983259135955*^9, 
+  3.760983260049552*^9}},ExpressionUUID->"55967f6a-8e31-45b3-93b1-\
+36380b4af576"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Clear", "[", "s", "]"}], ";", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"s", "\[Equal]", " ", 
+      RowBox[{
+       FractionBox["7", "12"], "+", 
+       RowBox[{"s", 
+        FractionBox["4", "12"]}], "+", " ", 
+       RowBox[{
+        RowBox[{"+", 
+         SuperscriptBox["s", "2"]}], 
+        FractionBox["1", "12"]}]}]}], ",", "s"}], "]"}], ";"}]}]], "Input",
+ CellChangeTimes->{
+  3.76097557829357*^9, {3.760975712818316*^9, 3.7609757468798857`*^9}, {
+   3.760983606182066*^9, 3.760983606298191*^9}, {3.7609966156696997`*^9, 
+   3.760996657928659*^9}, {3.760997084200794*^9, 3.760997107751521*^9}, {
+   3.761002679261595*^9, 3.761002690032525*^9}, {3.761002769424758*^9, 
+   3.761002800996126*^9}},ExpressionUUID->"b396dabc-fe51-467e-aa5a-\
+cbacba324c12"],
+
+Cell[TextData[StyleBox["(b)  Graph  \[CurlyPhi](s)  together with the \
+function g(s) = s.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{
+  3.760975669774425*^9, {3.760975962823642*^9, 
+   3.7609759674305267`*^9}},ExpressionUUID->"1b4895b8-e368-460e-ab35-\
+0db5c3136aff"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"s", ",", 
+     RowBox[{
+      FractionBox["7", "12"], "+", 
+      RowBox[{"s", 
+       FractionBox["4", "12"]}], "+", " ", 
+      RowBox[{
+       RowBox[{"+", 
+        SuperscriptBox["s", "2"]}], 
+       FractionBox["1", "12"]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.760975969504195*^9, 3.760975989945675*^9}, {
+   3.760976200814762*^9, 3.760976201582773*^9}, {3.7610028076675987`*^9, 
+   3.76100281817135*^9}, 3.761004368227008*^9},
+ CellLabel->"In[87]:=",ExpressionUUID->"a2583409-aed4-4719-975e-61c9a08ac89f"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxFxXss1AEcAPDToXZOc5QId7+TuZxH/NGWlke0Ja8lLttZjzvcKa+Y24RK
+Im5GV908d7sd0cyctNOmxyVEXte4Usu1zLkZsdF1cSjVH77fPz77MPnZ51J3
+kUikmH/+L7vJtw5IqQzeeUBLRCcSV0J23h5U3yGI67Cst4phRYjhjCBR5hqj
+HtZupklXGG3w7ulZ1jKjB1aMyHO+M4ZhZad4OsPvCywMmahfytXDWQYvvUq5
+AFOYpaxvx1bgartRtuKyEeZPJ7wmj/2Cc96W8rNZG3DXNWq805nfsKIwfdE/
+kRS6c4l8K+7nkgVM0s6Eviwgw555gvwEthU8Z6o9b/PKGo40XL3xIGcPHDsn
+8abTKfBiP7/4XYcN7Eebcgu/ZAtTQkw8nXEvfHqZu+bOsYM/96VYcH1ocHfF
+wEXChAusRDMajT2cnFvYTW1wgI8IvTXRvH3we3sfG1HgfviFsqTRh+wIF1qw
+z459xSm6gogs1QHY0MqUyoucYOlhZ8sejjMsaRAM8YiDMFd6QUOdx9dPtZjl
+ahdYbwjL7yt3hZuCAlzGeW5wR5mIJvSlw+Wc5CiyCT+qU7SVjzPgOq/GjvEo
+Ar7VW1UX1YPHuHBaRjyY8MmsoSSaGJe78j3GTLhH/+Oa2CR3WOLbx55U4wKj
+5cQw+xDM7/pBiO/hGSXxW5H3cVG86hP1IV5hElVLanBloHmzVoab32xPtbbj
+kklq1cAQ3tCcmXZ3GG/O04RHjOLPHCUboxpcx3VI037EWXrn8Fk97q8qoD8y
+4MfLps2p83g0S/ZkYRHPTSfoq6t40Ynb5qdGvMx29kOeCa/rbK5cX8ebii2F
+zzfw9rjUsKItXOU+6Bb8B1cbPc3b2/hfxrMqyQ==
+       "]]},
+     Annotation[#, "Charting`Private`Tag$12474#1"]& ], 
+    TagBox[
+     {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJwVznk41HkAx/GxxrHT1GJK5JjjJ/MLWbW77ar0/ZQ2yVF2kl2VMnKUoXWM
+5Fi6RFKz5aFY5CirorWpZ7tkURKmJ0oH++iZMY8lQmMwKNv+8X5e/7754v0/
+BH/GYDC8PvW/Bb+I9ZftyVyTvNbpyeXLCtLYwfP04+0lSQfKJezrCjL7sPYI
+j3eQpL16JIq6oyAFdVlcPV4GqeWzZte3KojERRoxwT1P7tSnNXPeKUjHdFj2
+CLeCjGwIc9y8XEkMuhTCIe4t4vJj67cu95Sk+HFR1FtuM9lTaOY+3t1Lqq5l
+dEkcXxM55bJq+mAfCSVPzw9GK4lGlumXKBggkaolypqqfrI4ZSVjfHSQsPhH
+hT3fjZDwxW6SVMsRcsqoxa54t5owNBFIuz9KxF1b7+u2jpMYcY4yr1RNoh4c
+Fe8XThFG2vbbTgUaUv0zW2Tm/oFMtv22UXl6ghQnhg84+THw0DVs+OvHWnK4
+aMZnbFAH6U9DKwOnpgmj4w3uJugidiYm4KTzR2IbGxK/1U4PAp/KqIAgBno1
+udvm3NNH+/BX/U3FOtik2pd8JsoQL9MHGp9/rgvvXpm9tTULJcm6r4ISmBho
+EKc+qpyDfRfGMs726MHRuNPKdddctH4sj6mMMgCLaAK71fPAWH5C1DxuCLch
+/wmBrxEkKozGXGHhZf0eHX8HY9j1ucjFoWzcSG8M4GmMkeW2JJjHmYcQPekb
+udwE+WVXPW+OfoGg6MQb7DwOVpoaXV/dY4QvQ+3lnoHzEdcW+aKwyRhPTBzm
+SJ0X4ITTUIZBiwnuVB3Od9A1hS3hTU40cJCoY7el9R9TnKny2YBX88HqTtgY
+WbMQF/xCmKzRBVBd4mcXJZnhJMeE0TBjimzanHnL1xz0W2byAVszyPJCmgJ5
+iwATL0MPV3P4Z++Us/sWwXFwrGx29yJMrr+oLaq1wHBmIcO90AJK1br4+uOW
+qLu+o5Jqs0SJyzKLtkAr6PdvSVBaWqPymNQ4dKk1Lkgj4oN2cnHcN8hDV2ON
+bSvshjmbefimu7jieBsX0h0luMng49yS/Mo2Dx4ix9jKkQo+Uuqyznnc4qFu
+9abc+cECeFn4Xnxsw8fmD2qDfB6FtZFN240z+EgNOLRsqJ1CkaXYplXDR16e
+3vmpXBvYNJTneG8XYA2rMyZctBiypfV27bUCDC7sTYmcZ4sQNfNpsx2FasGG
+Rm23LcTV73kZpymETYrW84uFkBwWzWz6lYLEXV2aXSaEVFTzgn2Wwqo30d8b
+/i5EukZ6Spbz6aPHxHukSogqZ+10bgGFt4JOacNdIbR/z3ZeukLhat1ebtxL
+IWTt7KzGJgqjvg9es41o5JVGhKU1U8jeHRGXzqFRGit33dhCgVmtETEX0rhp
+KptqkVPwoMqfzVjR6PbnhHU8pyD1yhocsachVJq7KpQUVvwVEqdyo+FUk2Bd
+pqJQweU4BXvQWHmsSxvcR6G/tche5U3DU1jwR/8AhSeTP/2r8qURHc6zHh2l
+4JzjEz8QRCNp9SHtn2oKCxwYayWhNI7NVTyL1VC4a3Da490+GueulWZOTlKI
+kXnZqqNolKQyQ29PUTjikjwuldK44hO8LmmGwi6nLENtPI0awUOrNR8p6O9N
+3pGURKNWbaudnaXwS5/X+9kUGv8BnlQoAA==
+       "]]},
+     Annotation[#, "Charting`Private`Tag$12474#2"]& ]}, {}, {}},
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 10}, {0., 12.249999591836737`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.760976198308299*^9, 3.7609762018286324`*^9}, {
+   3.761002809323987*^9, 3.761002818539528*^9}, 3.761004369576066*^9},
+ CellLabel->"Out[87]=",ExpressionUUID->"0d804a3b-1eca-4eee-a81e-e8b500bbd58a"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["(c)  Find the expected size of the male population in \
+the 7-th generation.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.7609762249312057`*^9, 
+  3.7609762330034857`*^9}},ExpressionUUID->"8bb1534c-1928-40dd-bb3a-\
+0422920a5b21"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The expected size of the male population in the 7-th generation is \
+\>\"", ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "/", "2"}], ")"}], "^", "7"}], "//", "N"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.76097625856914*^9, 3.7609762728841743`*^9}, {
+  3.761002857755465*^9, 3.761002858305286*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"e79e0d28-c55c-46f3-86a0-bf06e5054205"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The expected size of the male population in the 7-th \
+generation is \"\>", "\[InvisibleSpace]", "0.0078125`"}],
+  SequenceForm[
+  "The expected size of the male population in the 7-th generation is ", 
+   0.0078125],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7609762744019938`*^9, 3.761002860664055*^9},
+ CellLabel->
+  "During evaluation of \
+In[23]:=",ExpressionUUID->"64c6c0b2-4d7d-4913-a5e9-e7be9d5e4f55"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["(d)  What is the probability that the male line of descent of a \
+particular husband will die out\n\n       (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["i",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")    in the 3-rd  generation",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{
+  3.76097623602223*^9, {3.760976294259169*^9, 
+   3.760976299473712*^9}},ExpressionUUID->"59ed0a10-486b-4874-a80f-\
+1be5f0905bda"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Pi]1", "=", 
+   RowBox[{
+    FractionBox["7", "12"], "//", "N"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Pi]2", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["7", "12"], "+", " ", 
+     RowBox[{"\[Pi]1", 
+      FractionBox["4", "12"]}], "+", 
+     RowBox[{
+      SuperscriptBox["\[Pi]1", "2"], 
+      FractionBox["1", "12"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]3", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["7", "12"], "+", 
+     RowBox[{"\[Pi]2", 
+      FractionBox["4", "12"]}], "+", " ", 
+     RowBox[{
+      SuperscriptBox["\[Pi]2", "2"], 
+      FractionBox["1", "12"]}]}], "//", "N"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the male descent of a particular husband will die \
+out in the 3-rd generation is \>\"", ",", 
+   RowBox[{"\[Pi]3", "-", "\[Pi]2"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7609763025946217`*^9, 3.760976320264607*^9}, {
+  3.760983107367138*^9, 3.760983196844479*^9}, {3.761002915562786*^9, 
+  3.7610029405365477`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"ea9f44ee-1d1b-4eb8-be59-bb6beee54952"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the male descent of a particular husband \
+will die out in the 3-rd generation is \"\>", "\[InvisibleSpace]", 
+   "0.1000648641564501`"}],
+  SequenceForm[
+  "The probability that the male descent of a particular husband will die out \
+in the 3-rd generation is ", 0.1000648641564501],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.760983175591033*^9, 3.760983198457663*^9}, 
+   3.761002942210229*^9},
+ CellLabel->
+  "During evaluation of \
+In[24]:=",ExpressionUUID->"fe8592b7-e3e6-4a53-8d02-b26279f9e478"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["        (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["ii",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")   by the n-th generation for n = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760983220187826*^9, 3.76098325131251*^9}, {
+  3.760983323952265*^9, 
+  3.760983325901465*^9}},ExpressionUUID->"b1cc551e-dfb8-4dd5-9fff-\
+871faf8e5b7a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"\[Pi]1", "=", 
+  RowBox[{
+   FractionBox["7", "12"], "//", "N"}]}], "\n", 
+ RowBox[{"\[Pi]2", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]1", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]1", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]3", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]2", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]2", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]4", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]3", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]3", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]5", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]4", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]4", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]6", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]5", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]5", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]7", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]6", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]6", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]8", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]7", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]7", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]9", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]8", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]8", "2"], 
+     FractionBox["1", "12"]}]}], "//", "N"}]}], "\[IndentingNewLine]", 
+ RowBox[{"\[Pi]10", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["7", "12"], "+", " ", 
+    RowBox[{"\[Pi]9", 
+     FractionBox["4", "12"]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]9", "2"], 
+     FractionBox["1", "12"]}]}], "//", 
+   "N"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.760983327110346*^9, {3.760983369720743*^9, 3.760983392942939*^9}, {
+   3.76100325299088*^9, 3.7610032902768183`*^9}, {3.761003324174284*^9, 
+   3.761003411686224*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"41b6e6fb-9d3a-4467-8c7d-cb058f4d6366"],
+
+Cell[BoxData["0.5833333333333334`"], "Output",
+ CellChangeTimes->{3.7610034126486273`*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"4005a67b-c81f-46dd-8f7b-44146cfbccd4"],
+
+Cell[BoxData["0.8061342592592593`"], "Output",
+ CellChangeTimes->{3.761003412664887*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"dd50994d-62a8-4a83-97fc-85f3d3d16d14"],
+
+Cell[BoxData["0.9061991234157094`"], "Output",
+ CellChangeTimes->{3.7610034126808577`*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"14a51b00-08e0-4156-b953-5a5fd87c0484"],
+
+Cell[BoxData["0.9538327787451865`"], "Output",
+ CellChangeTimes->{3.761003412694715*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"498272d8-08fe-46a2-9d69-2075f567f34a"],
+
+Cell[BoxData["0.9770940070657925`"], "Output",
+ CellChangeTimes->{3.761003412702011*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"d2022ade-21a8-466e-9e81-8fd68d2347a1"],
+
+Cell[BoxData["0.9885907272422547`"], "Output",
+ CellChangeTimes->{3.761003412708858*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"e74dea85-1577-486c-912e-325cfe488ff1"],
+
+Cell[BoxData["0.9943062112465324`"], "Output",
+ CellChangeTimes->{3.761003412715308*^9},
+ CellLabel->"Out[52]=",ExpressionUUID->"f438d3be-94b2-47fc-9d6d-db858eabbc21"],
+
+Cell[BoxData["0.997155807225797`"], "Output",
+ CellChangeTimes->{3.7610034127231092`*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"f9d3686a-21d8-4e08-bf6e-f728512d5da8"],
+
+Cell[BoxData["0.9985785777322767`"], "Output",
+ CellChangeTimes->{3.761003412731907*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"6ae949fd-4e12-43de-a003-7912ad762ab2"],
+
+Cell[BoxData["0.9992894572362436`"], "Output",
+ CellChangeTimes->{3.7610034127403727`*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"475ec95a-5d21-472e-9194-d981af594f76"]
+}, Open  ]],
+
+Cell[TextData[{
+ "    ",
+ StyleBox["(",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["iii",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")  eventually",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.760983398897401*^9, 3.76098341802089*^9}, {
+  3.761003436625579*^9, 
+  3.761003440873426*^9}},ExpressionUUID->"76b0572e-5be1-41df-b2ce-\
+1f524789a5cc"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"extinct", "=", 
+   RowBox[{"7", "/", "12"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "2"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "100000"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"extinct", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["7", "12"], "+", 
+       RowBox[{"extinct", 
+        FractionBox["4", "12"]}], "+", " ", 
+       RowBox[{
+        SuperscriptBox["extinct", "2"], 
+        FractionBox["1", "12"]}]}], ")"}], "//", "N"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the male descent of a particular husband will die \
+out eventually is \>\"", ",", "extinct"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.760983452233617*^9, 3.7609835069277897`*^9}, {
+  3.761003024716514*^9, 3.761003043329651*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"1976313c-b0e3-4730-9ae4-08104308e79f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the male descent of a particular husband \
+will die out eventually is \"\>", "\[InvisibleSpace]", "1.`"}],
+  SequenceForm[
+  "The probability that the male descent of a particular husband will die out \
+eventually is ", 1.],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.760983511450433*^9, 3.761003046140361*^9},
+ CellLabel->
+  "During evaluation of \
+In[28]:=",ExpressionUUID->"3d4b8833-4d80-4a70-a153-32cb278050c2"],
+
+Cell[TextData[StyleBox["(e)  Simulate n = 100000 samples of the first 7 male \
+generations, compute the frequency of extinction by \n      the 7-th \
+generation and the average size of the 7-th generation of males. Compare with \
+exact values.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.7610030590740957`*^9, 
+  3.761003080066059*^9}},ExpressionUUID->"0ed2b673-5891-4862-bc44-\
+8bbc902ed14c"],
+
+Cell[BoxData[{
+ RowBox[{"X", ":=", 
+  RowBox[{"RandomReal", "[", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "[", "x_", "]"}], ":=", 
+  RowBox[{"Piecewise", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", " ", 
+        RowBox[{"7", "/", "12"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       RowBox[{
+        RowBox[{"7", "/", "12"}], "<", "x", "\[LessEqual]", " ", 
+        RowBox[{"11", "/", "12"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", 
+       RowBox[{
+        RowBox[{"11", "/", "12"}], "<", "x", "\[LessEqual]", " ", "1"}]}], 
+      "}"}]}], "}"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", "100000"}], ";", 
+  RowBox[{"NumGenerations", "=", "7"}], ";", 
+  RowBox[{"size", "=", "0"}], ";", 
+  RowBox[{"count1", "=", "0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Do", "[", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "=", "1"}], ";", "\[IndentingNewLine]", "  ", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", "       ", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"x", ">", "0"}], ",", 
+         RowBox[{
+          RowBox[{"a", "=", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"g", "[", "X", "]"}], ",", 
+             RowBox[{"{", "x", "}"}]}], "]"}]}], ";", 
+          RowBox[{"x", "=", 
+           RowBox[{"Apply", "[", 
+            RowBox[{"Plus", ",", "a"}], "]"}]}]}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "      ", 
+       RowBox[{"{", "NumGenerations", "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", "  ", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"x", "\[Equal]", "0"}], ",", 
+       RowBox[{"count1", "=", 
+        RowBox[{"count1", "+", "1"}]}], ",", 
+       RowBox[{"size", "=", 
+        RowBox[{"size", "+", "x"}]}]}], " ", "]"}]}], ",", 
+    "\[IndentingNewLine]", " ", 
+    RowBox[{"{", "n", "}"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<frequency(extinction by 7-th generation) = \>\"", ",", 
+    RowBox[{
+     RowBox[{"count1", "/", "n"}], "//", "N"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<\!\(\*SubscriptBox[\(\[Pi]\), \(\(7\)\(\\\ \)\)]\)= \>\"", ",", " ", 
+    "0.99431"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<average(size of 7-th generation) = \>\"", ",", 
+    RowBox[{
+     RowBox[{"(", " ", 
+      FractionBox["size", "n"], ")"}], "//", "N"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<E \!\(\*FormBox[StyleBox[SubscriptBox[StyleBox[\"X\",FontWeight->\"\
+Plain\",FontSlant->\"Plain\",FontTracking->\"Plain\",
+FontVariations->{\"CompatibilityType\"->0,\"Outline\"->False,\"Shadow\"->\
+False,\"StrikeThrough\"->False,\"Underline\"->False},FontVariations -> \
+{\"Masked\" -> False},FontVariations -> {\"RotationAngle\" -> 0}], \
+\"7\"],FontSlant->\"Italic\"],TraditionalForm]\) = \>\"", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "/", "2"}], ")"}], "^", "7"}], "//", "N"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.761003082643224*^9, 3.761003197253841*^9}, {
+  3.761003465503532*^9, 3.761003485811059*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"dceb3e9d-7cef-4e3d-af1a-f2f15fc0c3f7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"frequency(extinction by 7-th generation) = \"\>", 
+   "\[InvisibleSpace]", "0.99445`"}],
+  SequenceForm["frequency(extinction by 7-th generation) = ", 0.99445],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761003200792471*^9, 3.761003479106943*^9, 
+  3.7610035330239697`*^9},
+ CellLabel->
+  "During evaluation of \
+In[72]:=",ExpressionUUID->"ddb7b971-39d1-4618-99c3-e8dfa124669b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(\[Pi]\\), \\(\\(7\\)\\(\\\\ \
+\\)\\)]\\)= \"\>", "\[InvisibleSpace]", "0.99431`"}],
+  SequenceForm["\!\(\*SubscriptBox[\(\[Pi]\), \(\(7\)\(\\ \)\)]\)= ", 0.99431],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761003200792471*^9, 3.761003479106943*^9, 
+  3.761003533031465*^9},
+ CellLabel->
+  "During evaluation of \
+In[72]:=",ExpressionUUID->"558d2064-383b-40fa-abae-0eda52f47692"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"average(size of 7-th generation) = \"\>", "\[InvisibleSpace]", 
+   "0.00757`"}],
+  SequenceForm["average(size of 7-th generation) = ", 0.00757],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761003200792471*^9, 3.761003479106943*^9, 
+  3.761003533034546*^9},
+ CellLabel->
+  "During evaluation of \
+In[72]:=",ExpressionUUID->"813ada85-a92b-43eb-83e5-5c4fe4c7a2bc"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"E \
+\\!\\(\\*FormBox[StyleBox[SubscriptBox[StyleBox[\\\"X\\\",FontWeight->\\\"\
+Plain\\\",FontSlant->\\\"Plain\\\",FontTracking->\\\"Plain\\\",\\\
+nFontVariations->{\\\"CompatibilityType\\\"->0,\\\"Outline\\\"->False,\\\"\
+Shadow\\\"->False,\\\"StrikeThrough\\\"->False,\\\"Underline\\\"->False},\
+FontVariations -> {\\\"Masked\\\" -> False},FontVariations -> \
+{\\\"RotationAngle\\\" -> 0}], \
+\\\"7\\\"],FontSlant->\\\"Italic\\\"],TraditionalForm]\\) = \"\>", 
+   "\[InvisibleSpace]", "0.0078125`"}],
+  SequenceForm[
+  "E \!\(\*FormBox[StyleBox[SubscriptBox[StyleBox[\"X\",FontWeight->\"Plain\",\
+FontSlant->\"Plain\",FontTracking->\"Plain\",\n\
+FontVariations->{\"CompatibilityType\"->0,\"Outline\"->False,\"Shadow\"->\
+False,\"StrikeThrough\"->False,\"Underline\"->False},FontVariations -> \
+{\"Masked\" -> False},FontVariations -> {\"RotationAngle\" -> 0}], \
+\"7\"],FontSlant->\"Italic\"],TraditionalForm]\) = ", 0.0078125],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761003200792471*^9, 3.761003479106943*^9, 
+  3.761003533037631*^9},
+ CellLabel->
+  "During evaluation of \
+In[72]:=",ExpressionUUID->"580136fe-86d6-4c0e-9d1e-cf4f59570aaf"],
+
+Cell[TextData[{
+ "\n3. ",
+ StyleBox["Survival of Family Tree. ",
+  FontWeight->"Bold"],
+ " Assume that the number of children of a given family in certain region \
+(along will all decedents of future\n   generations) follows binomial \
+distribution b(5,1/2).\n   \n",
+ StyleBox["(a)  Find the PGF (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["Probability Generating Function",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")  \[CurlyPhi](s).",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.761003551415217*^9, 3.7610035693537273`*^9}, 
+   3.76100420633379*^9, 
+   3.7610043304324512`*^9},ExpressionUUID->"09b57b89-ffd8-427c-93c3-\
+cf67cb798c89"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", "s", "]"}], ";", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"s", "\[Equal]", " ", 
+     RowBox[{"0.03125", "+", 
+      RowBox[{"s", "*", "0.15625"}], " ", "+", 
+      RowBox[{
+       SuperscriptBox["s", "2"], "0.3125"}], "+", 
+      RowBox[{
+       SuperscriptBox["s", "3"], "0.3125"}], "+", 
+      RowBox[{
+       SuperscriptBox["s", "4"], "0.15625"}], "+", 
+      RowBox[{
+       SuperscriptBox["s", "5"], "0.03125"}]}]}], ",", "s"}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.76100421755562*^9, 3.7610043538566427`*^9}, 
+   3.761004418382949*^9},
+ CellLabel->"In[92]:=",ExpressionUUID->"c28ac2ca-b14b-4209-ac02-36d8f09366b7"],
+
+Cell[TextData[StyleBox["(b)  Graph  \[CurlyPhi](s)  together with the \
+function g(s) = s.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.761004207309136*^9, 3.761004213329002*^9}, {
+   3.761004341090741*^9, 3.7610043510385*^9}, 
+   3.761004381699939*^9},ExpressionUUID->"7b7a66ba-c7c1-46b6-9b80-\
+7995f5ca342e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"s", ",", " ", 
+      RowBox[{"0.03125", "+", 
+       RowBox[{"s", "*", "0.15625"}], " ", "+", 
+       RowBox[{
+        SuperscriptBox["s", "2"], "0.3125"}], "+", 
+       RowBox[{
+        SuperscriptBox["s", "3"], "0.3125"}], "+", 
+       RowBox[{
+        SuperscriptBox["s", "4"], "0.15625"}], "+", 
+       RowBox[{
+        SuperscriptBox["s", "5"], "0.03125"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", "0", ",", "1.25"}], "}"}], ",", 
+    RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7610043775436783`*^9, 3.7610044478738956`*^9}, 
+   3.7610045169825478`*^9, 3.761005248226564*^9},
+ CellLabel->
+  "In[134]:=",ExpressionUUID->"efb82e56-cb40-4139-b407-acd046819107"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxFxXsw0wEcAPAJdce6S911Odl+nLPMI/7oLl0ousv7Ess112PDprzi7E6o
+JGLX0aqd5+12I7pyJjXd6bGEyGMrFrk2tTZLhsLaMVyr/vD9/vG5jxs7+2Tq
+FhKJFPPP/0VX2VsDUpKCN+9TEdGJRGDI5tZ++Q2CiIBF3ZVUe+I0nBHEy1yh
+XoBV62nCRepleJtaR1ug8mHJkDhnjloHS9v56gy/RzA3ZLRuPvcpnGXw0suk
+XbCDWynt68FuuGrHMF1yvhdmqxNe2470wzlvS9nZtCG44xI5fk+EApYUphv9
+Ez/AJeKNuN/zozBJpT3yskAFe+Zx8hPo4/C0ueaU46sJONJw8crdnEk4dlrg
+TaF8ho297OJ3bWrYz2nCNezcFOwQYmZpTF/g4wvMFXeGFp7sSbFh+nyDOyv6
+zhJmnGPP0yqVOjg5t7CTXK+H93O9ldGsafj9Th9HXqABfiEtafCx/Q4X2tBP
+jEzhDpqC8CzZDGxocROKi37Awn3Odl2MWVhQzxlgEUaYKTyjJM/gq8eaLWL5
+HKw3hOb3lM/DjUEBLgrWAtxWxnPi+v6EyxnJUbZm/IBG8rBc8Quu9WpoU0Qt
+wte6K2ujuvAYF0bzkMcSfDRrIMmJj4v3sj1GzLhH74Pq2KRlWODbQx+T4xyT
+3egg3QSzO5YJ/m08oyR+I/IOzouXfSLfwyvMvCpBNS4NtKzXiHDLG+tESysu
+GCNX9g3g9U2ZaTcH8aY8ZVj4MP5st2BtWIlrmLvSVOM4Te8cptPj/rICyn0D
+fqhMbUmdwaNposezRjw3naAsLeFFh69bnpjwsu26j3lmvLa96dbqKt5YbMd9
+voa3xqWGFm3gMvd+1+A/uNzkabFa8b9Dz4dv
+       "]]},
+     Annotation[#, "Charting`Private`Tag$19295#1"]& ], 
+    TagBox[
+     {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJwVj3k41HkAh8einjQd1G55HHNkKWHVdtnok2pXUTqEB7vZUa5IsaanZJFY
+TbZWpZKyGFLIUU0tZZmQyTVuHUNqxghRxrepGfOr2faP93n/fJ+XFXBwV+BX
+NBpt2xf+d1ZcwLRl+/zWBTo5sWm0HNR3Mbd6Mx3gVaVbIJmeA21D9QkmcwtE
+K2txf04OsoSnGfpMH5jyGysSGDkId+Ie+MgIRSE77vly5KBLE5I+wTgKVbvi
+hk18DqZLpFbjDB78G2cMxOrkIrcpO/IN4zLYxg5ldXP4KC3jScLtikDTd25V
+p+QjGB2Xx6LuwMBl3tiU0XVEyJfIBKWVGBu2e7hdXAgDVpLVwBohXnT38B1n
+l+DM3Gbr3F/r0CHQ225pX44Aye4a3ZYGtNuaFtZY3Ubko6SAg1ZNUCSUhVzf
+JMCtQ3SPhVtacepKGjMp9B5yj4WN2nu3Q9Mf52w3UYHEbGrn+7EOOBbf/+wS
+/wC0rpfrq2K6EDorZoS/ohqW0UFHdlv3YGjhTxGd5UIMKi95zfy3F+cWy++6
+utbCVb7/93ORT5F/kSX7tLge7oNpS83Nn6N42MfY2aIBo3UBCY9LJPjnfEtR
+KvMx7Ax7zTb69+Oqa/OLoENNMICS00dewJ2fnE+ELXAZ9/3I9nyJZ/sPS9iR
+bXhau0/H1+YVZreFzVaxO3D3ZP0epvIViiQLdK3+7ESQPvelWCzFxNr1wWvt
+urE36thdeqYMmTqJLiXiHnwXvFS8lTOIgkATz4yEJ2gzspnJdZBjyt7XO4z7
+DA9KE6/Y6A5BFvPzGZ8gCY7pWO9o6R+ComBdeTm/HwZ9MZsjBK8xz3+niZdq
+APICVnp27DAMwq/aXVj0CumLjfUqPUfAoml5U4elSMsMEnGYo0i9c0ga1SCD
+b/ovYvrrUeyrGCriseRQbbqmzq5+g+HOkYSDZV+68g1HalPGEM+ee/TI6mHw
+nZaZtHLGoddef+Fr1QhKkrmGwbZvkSTlqufffoMUz71uusq3CGrTLnp3dBwr
++3ILU1rfgf5BkXo58R0yllwpaXWbgFsjg0N/OIF44ekMt8oJZD69FH1zUIFt
+Jp7XmiwUiDTuE68wInCOEPkZ8hRYlXe4PtPhPbJNAyxalAqEqjaMSnlKWNRd
+v+juNwmLIh/TwK4PSLOtte6snoR7747Gk9+qEET0OhqtCc55VY2MXlMj4NYk
+k/cXgcTR2+lvMw3CEz0o17MEq0SW03ZZaMD1EDyhnyfwTrZhT1+qwUkl90za
+RYK3orzd3DUalDqoNZeyCDYX1t7geGigfqjtLSgmWPRjn0MMT4O0TvrpehHB
+vVPenJsfNMjMOxDyRyNBtF/V5KlPGuRFizdubiZgrizq369H4d43aVPNYgLr
+m2NCOyMKfb7zQrp6CPb4Z9c22FKwkhlvlMoI7FWcgdWBFOwFMeb5coLIOLBs
+win8kCxRB74mECp7a1i/UdhqlVU+MkrQlkObb3icQlQY01yhIPh+73MzWhaF
+WMfj6tuEYG4j202bRyF5lrQ7WklgzK3p1RZRyCjLS1WpCCqW1M3Qr6TAT9AL
+vj9F0K179tYMIYXinYEbYimC5aKEijkiCgJ2g9m6z1/+Rx6ZLxBTqCaWaq2W
+YNbg+UFGD4X/AD66esY=
+       "]]},
+     Annotation[#, "Charting`Private`Tag$19295#2"]& ]}, {}, {}},
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}, {Automatic, 
+     Charting`ScaledFrameTicks[{Identity, Identity}]}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 1.25}, {0., 1.8020323685470914`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.7610052488044357`*^9},
+ CellLabel->
+  "Out[134]=",ExpressionUUID->"16199634-99d3-44fc-9011-7cde1ac24269"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["(c)  Find the expected size of  population in the \
+10-th generation.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.761004342327454*^9, 3.761004346684038*^9}, {
+  3.761004485294299*^9, 
+  3.761004496832334*^9}},ExpressionUUID->"2f8704fe-7b12-4261-b556-\
+a06ce7efc485"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The expected size of the population in the 7-th generation is \>\"", 
+   ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", "2.5", ")"}], "^", "10"}], "//", "N"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.76100509780907*^9, 3.761005165934569*^9}, {
+  3.7610052204326143`*^9, 3.761005252311783*^9}, {3.7610369655105*^9, 
+  3.761036974904929*^9}},
+ CellLabel->
+  "In[169]:=",ExpressionUUID->"a5bb69e2-c0a4-40ea-b482-caf369382e9f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The expected size of the population in the 7-th generation is \
+\"\>", "\[InvisibleSpace]", "9536.7431640625`"}],
+  SequenceForm[
+  "The expected size of the population in the 7-th generation is ", 
+   9536.7431640625],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.761005264744574*^9, {3.761036966733528*^9, 3.761036975388339*^9}},
+ CellLabel->
+  "During evaluation of \
+In[169]:=",ExpressionUUID->"a168945b-9db4-43ed-85bc-e0f755d3d4f8"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["(d)  What is the probability that the family dies out\n\n       (",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["i",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")    in the 10-rd  generation",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.761004486052745*^9, 3.761004489461774*^9}, {
+  3.7610366532275248`*^9, 
+  3.7610366607020597`*^9}},ExpressionUUID->"a2ea839e-ad7d-4ee3-9aa4-\
+1688f048b4b1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Pi]1", "=", "0.03125"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"\[Pi]2", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]1", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]1", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]1", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]1", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]1", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]3", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]2", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]2", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]2", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]2", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]2", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]4", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]3", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]3", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]3", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]3", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]3", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]5", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]4", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]4", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]4", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]4", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]4", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]6", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]5", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]5", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]5", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]5", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]5", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]7", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]6", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]6", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]6", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]6", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]6", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]8", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]7", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]7", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]7", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]7", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]7", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]9", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]8", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]8", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]8", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]8", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]8", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Pi]10", "=", 
+   RowBox[{"0.03125", "+", " ", 
+    RowBox[{"\[Pi]9", "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]9", "2"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]9", "3"], "*", "0.3125"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]9", "4"], "*", "0.15625"}], "+", 
+    RowBox[{
+     SuperscriptBox["\[Pi]9", "5"], "*", "0.03125"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the family will die out in the 10-th generation \
+is \>\"", ",", 
+   RowBox[{"\[Pi]10", "-", "\[Pi]9"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.761036661609314*^9, 3.7610367379054613`*^9}, 
+   3.7610368069982367`*^9, {3.7610369417016277`*^9, 3.761036941947577*^9}, {
+   3.7610369908436613`*^9, 3.761037008399261*^9}},
+ CellLabel->
+  "In[170]:=",ExpressionUUID->"d00d9bcb-9bf3-4ebe-bee7-bf585db415ee"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the family will die out in the 10-th \
+generation is \"\>", "\[InvisibleSpace]", "5.90802758104747`*^-9"}],
+  SequenceForm[
+  "The probability that the family will die out in the 10-th generation is ", 
+   5.90802758104747*^-9],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761037009809638*^9},
+ CellLabel->
+  "During evaluation of \
+In[170]:=",ExpressionUUID->"df003dd1-4025-469e-85ab-352a95064965"]
+}, Open  ]],
+
+Cell[TextData[{
+ "       ",
+ StyleBox["(",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["ii",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")   by the 10-th generation",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.761036662960321*^9, 3.761036668569084*^9}, {
+  3.761036747167467*^9, 
+  3.761036775125252*^9}},ExpressionUUID->"50603ef6-35bd-4da4-8aab-\
+94c2ae581042"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the family will die out by the 10-th generation \
+is \>\"", ",", "\[Pi]10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.761036795278163*^9, 3.7610368040423727`*^9}, {
+  3.761037093520339*^9, 3.76103711749745*^9}},
+ CellLabel->
+  "In[181]:=",ExpressionUUID->"009eeba9-4349-472c-9598-86f8724d99a9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the family will die out by the 10-th \
+generation is \"\>", "\[InvisibleSpace]", "0.03758012604524976`"}],
+  SequenceForm[
+  "The probability that the family will die out by the 10-th generation is ", 
+   0.03758012604524976],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761037119448846*^9},
+ CellLabel->
+  "During evaluation of \
+In[181]:=",ExpressionUUID->"4dfa564a-3464-49b3-856b-570e32067b83"]
+}, Open  ]],
+
+Cell[TextData[{
+ "        ",
+ StyleBox["(",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["iii",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[")  eventually                            ( ",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox["Hint.",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0., 0., 0.]],
+ StyleBox[" Use  NRoots[ . ] or Solve [ . ] )  ",
+  FontColor->RGBColor[0., 0., 0.]]
+}], "Text",
+ CellChangeTimes->{{3.76103674943884*^9, 3.761036755163809*^9}, {
+  3.761036822296524*^9, 
+  3.761036827742229*^9}},ExpressionUUID->"90962eb3-562e-4074-921e-\
+ddf12ce4442c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"extinct", "=", "0.03125"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "2"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "100000"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"extinct", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"0.03125", "+", " ", 
+       RowBox[{"extinct", "*", "0.15625"}], "+", 
+       RowBox[{
+        SuperscriptBox["extinct", "2"], "*", "0.3125"}], "+", 
+       RowBox[{
+        SuperscriptBox["extinct", "3"], "*", "0.3125"}], "+", 
+       RowBox[{
+        SuperscriptBox["extinct", "4"], "*", "0.15625"}], "+", 
+       RowBox[{
+        SuperscriptBox["extinct", "5"], "*", "0.03125"}]}], ")"}], "//", 
+     "N"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<The probability that the family will die out eventually is \>\"", ",", 
+   "extinct"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7610367566442432`*^9, 3.761036763057526*^9}, {
+  3.761036829983276*^9, 3.7610368985983753`*^9}, {3.761037140187739*^9, 
+  3.7610371406565723`*^9}},
+ CellLabel->
+  "In[182]:=",ExpressionUUID->"67f41d0d-a6b3-4c99-945c-bafbb58a28a7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The probability that the family will die out eventually is \
+\"\>", "\[InvisibleSpace]", "0.037580127351768446`"}],
+  SequenceForm[
+  "The probability that the family will die out eventually is ", 
+   0.037580127351768446`],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.761036901267693*^9, 3.761037142844199*^9},
+ CellLabel->
+  "During evaluation of \
+In[182]:=",ExpressionUUID->"7e1f64d3-b3b6-48b5-90c0-ea37da4878ab"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["(e)  Simulate n = 100000 samples of the first 10 \
+generations, compute the frequency of extinction by \n      the 10-th \
+generation and the average size and standard deviation of the 10-th \
+generation of males . \n      Compare with exact values.",
+ FontColor->RGBColor[0., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.7610035791874647`*^9, 3.761003583264449*^9}, 
+   3.761037165825611*^9},ExpressionUUID->"a2eb752e-0576-4c25-8afe-\
+7be465a63504"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"X", ":=", 
+  RowBox[{"RandomReal", "[", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"h", "[", "x_", "]"}], ":=", 
+  RowBox[{"Piecewise", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"0", "\[LessEqual]", "x", "\[LessEqual]", " ", "0.03125"}]}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       RowBox[{"0.03125", "<", "x", "\[LessEqual]", " ", "0.1875"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", 
+       RowBox[{"0.1875", "<", "x", "\[LessEqual]", "0.5"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", 
+       RowBox[{"0.5", "<", "x", "\[LessEqual]", "0.8125"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", 
+       RowBox[{"0.8125", "<", "x", "\[LessEqual]", "0.96875"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", 
+       RowBox[{"0.96875", "<", "x", "\[LessEqual]", "1"}]}], "}"}]}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", "100000"}], ";", 
+  RowBox[{"NumGenerations", "=", "10"}], ";", 
+  RowBox[{"size", "=", "0"}], ";", 
+  RowBox[{"count1", "=", "0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Do", "[", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "=", "1"}], ";", "\[IndentingNewLine]", "  ", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", "       ", 
+      RowBox[{
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"x", ">", "0"}], ",", 
+         RowBox[{
+          RowBox[{"a", "=", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"h", "[", "X", "]"}], ",", 
+             RowBox[{"{", "x", "}"}]}], "]"}]}], ";", 
+          RowBox[{"x", "=", 
+           RowBox[{"Apply", "[", 
+            RowBox[{"Plus", ",", "a"}], "]"}]}]}]}], "]"}], ",", 
+       "\[IndentingNewLine]", "      ", 
+       RowBox[{"{", "NumGenerations", "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", "  ", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"x", "\[Equal]", "0"}], ",", 
+       RowBox[{"count1", "=", 
+        RowBox[{"count1", "+", "1"}]}], ",", 
+       RowBox[{"size", "=", 
+        RowBox[{"size", "+", "x"}]}]}], " ", "]"}]}], ",", 
+    "\[IndentingNewLine]", " ", 
+    RowBox[{"{", "n", "}"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<frequency(extinction by 10-th generation) = \>\"", ",", 
+    RowBox[{
+     RowBox[{"count1", "/", "n"}], "//", "N"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<\!\(\*SubscriptBox[\(\[Pi]\), \(\(10\)\(\\\ \)\)]\)= \>\"", ",", " ", 
+    "0.0375801"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<average(size of 10-th generation) = \>\"", ",", 
+    RowBox[{
+     RowBox[{"(", " ", 
+      FractionBox["size", "n"], ")"}], "//", "N"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+   "\"\<E \!\(\*FormBox[StyleBox[SubscriptBox[StyleBox[\"X\",FontWeight->\"\
+Plain\",FontSlant->\"Plain\",FontTracking->\"Plain\",
+FontVariations->{\"CompatibilityType\"->0,\"Outline\"->False,\"Shadow\"->\
+False,\"StrikeThrough\"->False,\"Underline\"->False},FontVariations -> \
+{\"Masked\" -> False},FontVariations -> {\"RotationAngle\" -> 0}], \
+\"10\"],FontSlant->\"Italic\"],TraditionalForm]\) = \>\"", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", "2.5", ")"}], "^", "10"}], "//", "N"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7610371690357723`*^9, 3.761037228035643*^9}, {
+  3.761037319036047*^9, 3.7610373859666758`*^9}, {3.761037481834949*^9, 
+  3.7610375844895*^9}, {3.761037852781157*^9, 3.7610378703907547`*^9}, {
+  3.761037908766246*^9, 3.761037909013125*^9}, {3.7610380173536053`*^9, 
+  3.761038020700427*^9}, {3.761038449609025*^9, 3.761038451718519*^9}, {
+  3.7610384887313433`*^9, 3.76103849652461*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"6a83562b-6579-4a0e-8d77-d7c16a951b2a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"frequency(extinction by 10-th generation) = \"\>", 
+   "\[InvisibleSpace]", "0.03746`"}],
+  SequenceForm["frequency(extinction by 10-th generation) = ", 0.03746],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7610384453496027`*^9, 3.7610384819176817`*^9, 
+  3.7610953974139023`*^9},
+ CellLabel->
+  "During evaluation of \
+In[18]:=",ExpressionUUID->"09e03732-9f47-4233-98f2-c2d0b0d5fe80"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\\!\\(\\*SubscriptBox[\\(\[Pi]\\), \\(\\(10\\)\\(\\\\ \
+\\)\\)]\\)= \"\>", "\[InvisibleSpace]", "0.0375801`"}],
+  SequenceForm[
+  "\!\(\*SubscriptBox[\(\[Pi]\), \(\(10\)\(\\ \)\)]\)= ", 0.0375801],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7610384453496027`*^9, 3.7610384819176817`*^9, 
+  3.761095397512764*^9},
+ CellLabel->
+  "During evaluation of \
+In[18]:=",ExpressionUUID->"6598d9b2-3753-4899-af39-25010797dc23"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"average(size of 10-th generation) = \"\>", "\[InvisibleSpace]",
+    "9533.53601`"}],
+  SequenceForm["average(size of 10-th generation) = ", 9533.53601],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7610384453496027`*^9, 3.7610384819176817`*^9, 
+  3.761095397561582*^9},
+ CellLabel->
+  "During evaluation of \
+In[18]:=",ExpressionUUID->"5e341ab6-744a-45d6-8b44-764a65ca1e6b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"E \
+\\!\\(\\*FormBox[StyleBox[SubscriptBox[StyleBox[\\\"X\\\",FontWeight->\\\"\
+Plain\\\",FontSlant->\\\"Plain\\\",FontTracking->\\\"Plain\\\",\\\
+nFontVariations->{\\\"CompatibilityType\\\"->0,\\\"Outline\\\"->False,\\\"\
+Shadow\\\"->False,\\\"StrikeThrough\\\"->False,\\\"Underline\\\"->False},\
+FontVariations -> {\\\"Masked\\\" -> False},FontVariations -> \
+{\\\"RotationAngle\\\" -> 0}], \
+\\\"10\\\"],FontSlant->\\\"Italic\\\"],TraditionalForm]\\) = \"\>", 
+   "\[InvisibleSpace]", "9536.7431640625`"}],
+  SequenceForm[
+  "E \!\(\*FormBox[StyleBox[SubscriptBox[StyleBox[\"X\",FontWeight->\"Plain\",\
+FontSlant->\"Plain\",FontTracking->\"Plain\",\n\
+FontVariations->{\"CompatibilityType\"->0,\"Outline\"->False,\"Shadow\"->\
+False,\"StrikeThrough\"->False,\"Underline\"->False},FontVariations -> \
+{\"Masked\" -> False},FontVariations -> {\"RotationAngle\" -> 0}], \
+\"10\"],FontSlant->\"Italic\"],TraditionalForm]\) = ", 9536.7431640625],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7610384453496027`*^9, 3.7610384819176817`*^9, 
+  3.761095397605218*^9},
+ CellLabel->
+  "During evaluation of \
+In[18]:=",ExpressionUUID->"fa8c24c7-40a3-4474-94f6-f9f6883a799e"]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+CellGrouping->Manual,
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+Magnification->1,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Microsoft Windows (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 234, 4, 67, "Section",ExpressionUUID->"7f060356-627c-4e2e-9b85-bf62abd0a975"],
+Cell[782, 26, 1572, 30, 97, "Text",ExpressionUUID->"1fb835e6-3edc-4b30-96c8-96e5280cb720"],
+Cell[2357, 58, 680, 18, 45, "Input",ExpressionUUID->"eedd812b-c654-4d10-b7bb-38ee642be25c"],
+Cell[3040, 78, 339, 6, 34, "Text",ExpressionUUID->"54236b64-7c35-4218-988e-b2fc73ef9e69"],
+Cell[3382, 86, 702, 20, 45, "Input",ExpressionUUID->"c6c685ae-b68a-4269-83dd-53c347b195a1"],
+Cell[4087, 108, 4227, 89, 410, "Output",ExpressionUUID->"5a834337-2a7d-40b5-819b-704d2cca897b"],
+Cell[8317, 199, 394, 7, 34, "Text",ExpressionUUID->"2e3e8f25-e013-4e71-bbd1-638d1acb2ca0"],
+Cell[CellGroupData[{
+Cell[8736, 210, 487, 13, 28, "Input",ExpressionUUID->"fd50fe18-61f2-453f-ae45-b364d2bed55f"],
+Cell[9226, 225, 487, 11, 22, "Print",ExpressionUUID->"b19ebb70-5bd0-4d4c-910f-4316a725516e"]
+}, Open  ]],
+Cell[9728, 239, 511, 13, 78, "Text",ExpressionUUID->"56e6ce91-3ae9-425f-9d5a-984c467687ae"],
+Cell[CellGroupData[{
+Cell[10264, 256, 1366, 40, 138, "Input",ExpressionUUID->"9379e7cf-303e-4e9e-baa9-130acdd0d55a"],
+Cell[11633, 298, 560, 12, 22, "Print",ExpressionUUID->"f4d7b545-05b6-461b-b911-85beac82b75e"]
+}, Open  ]],
+Cell[12208, 313, 439, 12, 34, "Text",ExpressionUUID->"5e879a55-f2d4-48ff-952c-55dd084d75ff"],
+Cell[CellGroupData[{
+Cell[12672, 329, 2879, 91, 282, "Input",ExpressionUUID->"2c419b53-e7d8-4bf5-8a66-489dc0d4d29e"],
+Cell[15554, 422, 532, 12, 24, "Print",ExpressionUUID->"3f719da3-5522-40dd-b7a2-f6b31c7cb581"]
+}, Open  ]],
+Cell[16101, 437, 399, 12, 35, "Text",ExpressionUUID->"86126d04-9f73-47da-818f-a133f945c88a"],
+Cell[CellGroupData[{
+Cell[16525, 453, 1101, 31, 92, "Input",ExpressionUUID->"75555da6-286f-4087-94e9-ab33f8833d70"],
+Cell[17629, 486, 528, 11, 24, "Print",ExpressionUUID->"079c454c-aa3a-4136-a2ba-16731ac181ff"]
+}, Open  ]],
+Cell[18172, 500, 438, 7, 58, "Text",ExpressionUUID->"b0a20099-d636-4558-b7c7-8f96698d32f2"],
+Cell[18613, 509, 1008, 30, 35, "Text",ExpressionUUID->"e171c95e-a8ed-4313-831e-c3f8baedaac7"],
+Cell[19624, 541, 1133, 31, 30, "Input",ExpressionUUID->"76aa9435-df3f-41de-b6c1-17161f40e9d6"],
+Cell[CellGroupData[{
+Cell[20782, 576, 4040, 103, 302, "Input",ExpressionUUID->"77781a89-863f-43ca-ac2c-bdf9b642c137"],
+Cell[24825, 681, 687, 14, 24, "Print",ExpressionUUID->"35ec1d17-8f50-4c78-ba50-4f103c5e6ca0"],
+Cell[25515, 697, 718, 15, 24, "Print",ExpressionUUID->"dcc572bc-8c6e-4d48-8e02-4ab5205b5fa5"],
+Cell[26236, 714, 669, 14, 24, "Print",ExpressionUUID->"363633a6-0329-494d-8763-e2e012089718"],
+Cell[26908, 730, 1474, 27, 24, "Print",ExpressionUUID->"fc252449-18d3-4924-bb89-502f934266e4"]
+}, Open  ]],
+Cell[28397, 760, 825, 20, 127, "Text",ExpressionUUID->"55967f6a-8e31-45b3-93b1-36380b4af576"],
+Cell[29225, 782, 842, 21, 68, "Input",ExpressionUUID->"b396dabc-fe51-467e-aa5a-cbacba324c12"],
+Cell[30070, 805, 290, 6, 35, "Text",ExpressionUUID->"1b4895b8-e368-460e-ab35-0db5c3136aff"],
+Cell[CellGroupData[{
+Cell[30385, 815, 733, 19, 47, "Input",ExpressionUUID->"a2583409-aed4-4719-975e-61c9a08ac89f"],
+Cell[31121, 836, 4326, 90, 449, "Output",ExpressionUUID->"0d804a3b-1eca-4eee-a81e-e8b500bbd58a"]
+}, Open  ]],
+Cell[35462, 929, 276, 5, 35, "Text",ExpressionUUID->"8bb1534c-1928-40dd-bb3a-0422920a5b21"],
+Cell[CellGroupData[{
+Cell[35763, 938, 461, 12, 30, "Input",ExpressionUUID->"e79e0d28-c55c-46f3-86a0-bf06e5054205"],
+Cell[36227, 952, 467, 11, 24, "Print",ExpressionUUID->"64c6c0b2-4d7d-4913-a5e9-e7be9d5e4f55"]
+}, Open  ]],
+Cell[36709, 966, 488, 13, 81, "Text",ExpressionUUID->"59ed0a10-486b-4874-a80f-1be5f0905bda"],
+Cell[CellGroupData[{
+Cell[37222, 983, 1172, 33, 147, "Input",ExpressionUUID->"ea9f44ee-1d1b-4eb8-be59-bb6beee54952"],
+Cell[38397, 1018, 581, 13, 24, "Print",ExpressionUUID->"fe8592b7-e3e6-4a53-8d02-b26279f9e478"]
+}, Open  ]],
+Cell[38993, 1034, 448, 12, 35, "Text",ExpressionUUID->"b1cc551e-dfb8-4dd5-9fff-871faf8e5b7a"],
+Cell[CellGroupData[{
+Cell[39466, 1050, 2806, 90, 420, "Input",ExpressionUUID->"41b6e6fb-9d3a-4467-8c7d-cb058f4d6366"],
+Cell[42275, 1142, 169, 2, 34, "Output",ExpressionUUID->"4005a67b-c81f-46dd-8f7b-44146cfbccd4"],
+Cell[42447, 1146, 167, 2, 34, "Output",ExpressionUUID->"dd50994d-62a8-4a83-97fc-85f3d3d16d14"],
+Cell[42617, 1150, 169, 2, 34, "Output",ExpressionUUID->"14a51b00-08e0-4156-b953-5a5fd87c0484"],
+Cell[42789, 1154, 167, 2, 34, "Output",ExpressionUUID->"498272d8-08fe-46a2-9d69-2075f567f34a"],
+Cell[42959, 1158, 167, 2, 34, "Output",ExpressionUUID->"d2022ade-21a8-466e-9e81-8fd68d2347a1"],
+Cell[43129, 1162, 167, 2, 34, "Output",ExpressionUUID->"e74dea85-1577-486c-912e-325cfe488ff1"],
+Cell[43299, 1166, 167, 2, 34, "Output",ExpressionUUID->"f438d3be-94b2-47fc-9d6d-db858eabbc21"],
+Cell[43469, 1170, 168, 2, 34, "Output",ExpressionUUID->"f9d3686a-21d8-4e08-bf6e-f728512d5da8"],
+Cell[43640, 1174, 167, 2, 34, "Output",ExpressionUUID->"6ae949fd-4e12-43de-a003-7912ad762ab2"],
+Cell[43810, 1178, 169, 2, 34, "Output",ExpressionUUID->"475ec95a-5d21-472e-9194-d981af594f76"]
+}, Open  ]],
+Cell[43994, 1183, 399, 13, 35, "Text",ExpressionUUID->"76b0572e-5be1-41df-b2ce-1f524789a5cc"],
+Cell[44396, 1198, 967, 26, 90, "Input",ExpressionUUID->"1976313c-b0e3-4730-9ae4-08104308e79f"],
+Cell[45366, 1226, 493, 11, 24, "Print",ExpressionUUID->"3d4b8833-4d80-4a70-a153-32cb278050c2"],
+Cell[45862, 1239, 417, 7, 58, "Text",ExpressionUUID->"0ed2b673-5891-4862-bc44-8bbc902ed14c"],
+Cell[46282, 1248, 3417, 92, 302, "Input",ExpressionUUID->"dceb3e9d-7cef-4e3d-af1a-f2f15fc0c3f7"],
+Cell[49702, 1342, 435, 10, 24, "Print",ExpressionUUID->"ddb7b971-39d1-4618-99c3-e8dfa124669b"],
+Cell[50140, 1354, 461, 10, 24, "Print",ExpressionUUID->"558d2064-383b-40fa-abae-0eda52f47692"],
+Cell[50604, 1366, 417, 10, 24, "Print",ExpressionUUID->"813ada85-a92b-43eb-83e5-5c4fe4c7a2bc"],
+Cell[51024, 1378, 1203, 23, 24, "Print",ExpressionUUID->"580136fe-86d6-4c0e-9d1e-cf4f59570aaf"],
+Cell[52230, 1403, 697, 18, 127, "Text",ExpressionUUID->"09b57b89-ffd8-427c-93c3-cf67cb798c89"],
+Cell[52930, 1423, 690, 19, 33, "Input",ExpressionUUID->"c28ac2ca-b14b-4209-ac02-36d8f09366b7"],
+Cell[53623, 1444, 333, 6, 35, "Text",ExpressionUUID->"7b7a66ba-c7c1-46b6-9b80-7995f5ca342e"],
+Cell[CellGroupData[{
+Cell[53981, 1454, 848, 23, 54, "Input",ExpressionUUID->"efb82e56-cb40-4139-b407-acd046819107"],
+Cell[54832, 1479, 4216, 90, 449, "Output",ExpressionUUID->"16199634-99d3-44fc-9011-7cde1ac24269"]
+}, Open  ]],
+Cell[59063, 1572, 314, 6, 35, "Text",ExpressionUUID->"2f8704fe-7b12-4261-b556-a06ce7efc485"],
+Cell[CellGroupData[{
+Cell[59402, 1582, 482, 12, 30, "Input",ExpressionUUID->"a5bb69e2-c0a4-40ea-b482-caf369382e9f"],
+Cell[59887, 1596, 495, 12, 24, "Print",ExpressionUUID->"a168945b-9db4-43ed-85bc-e0f755d3d4f8"]
+}, Open  ]],
+Cell[60397, 1611, 473, 12, 81, "Text",ExpressionUUID->"a2ea839e-ad7d-4ee3-9aa4-1688f048b4b1"],
+Cell[CellGroupData[{
+Cell[60895, 1627, 4477, 129, 241, "Input",ExpressionUUID->"d00d9bcb-9bf3-4ebe-bee7-bf585db415ee"],
+Cell[65375, 1758, 476, 11, 25, "Print",ExpressionUUID->"df003dd1-4025-469e-85ab-352a95064965"]
+}, Open  ]],
+Cell[65866, 1772, 416, 13, 35, "Text",ExpressionUUID->"50603ef6-35bd-4da4-8aab-94c2ae581042"],
+Cell[CellGroupData[{
+Cell[66307, 1789, 370, 8, 30, "Input",ExpressionUUID->"009eeba9-4349-472c-9598-86f8724d99a9"],
+Cell[66680, 1799, 474, 11, 24, "Print",ExpressionUUID->"4dfa564a-3464-49b3-856b-570e32067b83"]
+}, Open  ]],
+Cell[67169, 1813, 597, 18, 35, "Text",ExpressionUUID->"90962eb3-562e-4074-921e-ddf12ce4442c"],
+Cell[CellGroupData[{
+Cell[67791, 1835, 1163, 30, 75, "Input",ExpressionUUID->"67f41d0d-a6b3-4c99-945c-bafbb58a28a7"],
+Cell[68957, 1867, 473, 11, 24, "Print",ExpressionUUID->"7e1f64d3-b3b6-48b5-90c0-ea37da4878ab"]
+}, Open  ]],
+Cell[69445, 1881, 470, 7, 81, "Text",ExpressionUUID->"a2eb752e-0576-4c25-8afe-7be465a63504"],
+Cell[CellGroupData[{
+Cell[69940, 1892, 3961, 102, 302, "Input",ExpressionUUID->"6a83562b-6579-4a0e-8d77-d7c16a951b2a"],
+Cell[73904, 1996, 441, 10, 24, "Print",ExpressionUUID->"09e03732-9f47-4233-98f2-c2d0b0d5fe80"],
+Cell[74348, 2008, 474, 11, 24, "Print",ExpressionUUID->"6598d9b2-3753-4899-af39-25010797dc23"],
+Cell[74825, 2021, 429, 10, 24, "Print",ExpressionUUID->"5e341ab6-744a-45d6-8b44-764a65ca1e6b"],
+Cell[75257, 2033, 1221, 23, 24, "Print",ExpressionUUID->"fa8c24c7-40a3-4474-94f6-f9f6883a799e"]
+}, Open  ]]
+}
+]
+*)
+
