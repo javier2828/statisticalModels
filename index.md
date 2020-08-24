@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+## Statistical Models & Simulations (w/ Mathematica)
 
-You can use the [editor on GitHub](https://github.com/javier2828/statisticalModels/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Random Number Generation, Central Limit Theorem, & Law of Large Numbers
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab2.pdf)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab2.nb)
 
-### Markdown
+### Poisson Distribution Simulations (Marked & Compound)
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab3.pdf)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab3.nb)
 
-```markdown
-Syntax highlighted code block
+### Transition Matrices & Discrete-Time Markov Chains
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab4.pdf)
 
-# Header 1
-## Header 2
-### Header 3
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab4.nb)
 
-- Bulleted
-- List
+### Random Walks & Stationary Distributions
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab5.pdf)
 
-1. Numbered
-2. List
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab5.nb)
 
-**Bold** and _Italic_ and `Code` text
+### Gambler's Ruin & Casino Strategies
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab6.pdf)
 
-[Link](url) and ![Image](src)
-```
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab6.nb)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Continuous-Time Markov Chains & Birth/Death Processes
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab7.pdf)
 
-### Jekyll Themes
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab7.nb)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/javier2828/statisticalModels/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Monte-Carlo Techniques (Integration, Areas, & Importance Sampling)
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab8.pdf)
 
-### Support or Contact
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab8.nb)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Metropolis-Hastings (Markov chain Monte Carlo Algorithm)
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab9.pdf)
+
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab9.nb)
+
+### Brownian Motion & Stock Market
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab10.pdf)
+
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab10.nb)
+
+### Black-Scholes Option Pricing 
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab11.pdf)
+
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab11.nb)
+
+### Renewal Processes
+[Report](https://github.com/javier2828/stochasticModels/blob/master/Lab12.pdf)
+
+[Code](https://github.com/javier2828/stochasticModels/blob/master/Lab12.nb)
